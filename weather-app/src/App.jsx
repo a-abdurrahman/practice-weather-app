@@ -8,7 +8,7 @@ function App() {
   const [forecastState, setForecastState] = useState({});
   const [loadingState, setLoadingState] = useState(true);
   useEffect(() => {
-    const apiKey = "0ef5bd5cd32428a03b62a94e1527968e";
+    const apiKey = "";
     async function fetchWeather(lat, lon) {
       const response = await fetch(
         `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric`
